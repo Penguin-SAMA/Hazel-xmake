@@ -1,0 +1,4 @@
+.cache/clangd/index
+.xmake/linux/x86_64
+bin/linux/x86_64/release
+build

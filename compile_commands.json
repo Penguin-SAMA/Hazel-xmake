@@ -1,0 +1,11 @@
+[
+{
+  "directory": "/home/penguinsama/MyCode/Hazel-xmake",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-IHazel/src", "-DHZ_PLATFORM_LINUX", "-DHZ_RELEASE", "-Wall", "-Wextra", "-Wpedantic", "-fPIC", "-DNDEBUG", "-o", "build/.objs/linux/x86_64/release/Sandbox/linux/x86_64/release/Sandbox/src/SandboxApp.cpp.o", "Sandbox/src/SandboxApp.cpp"],
+  "file": "Sandbox/src/SandboxApp.cpp"
+},
+{
+  "directory": "/home/penguinsama/MyCode/Hazel-xmake",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-O3", "-std=c++17", "-IHazel/src", "-DHZ_BUILD_DLL", "-DHZ_PLATFORM_LINUX", "-DHZ_RELEASE", "-Wall", "-Wextra", "-Wpedantic", "-fPIC", "-DNDEBUG", "-o", "build/.objs/linux/x86_64/release/Hazel/linux/x86_64/release/Hazel/src/Hazel/Application.cpp.o", "Hazel/src/Hazel/Application.cpp"],
+  "file": "Hazel/src/Hazel/Application.cpp"
+}]
