@@ -5,6 +5,22 @@
 #include "Core.h"
 #include "spdlog/spdlog.h"
 
+// Forward declare Event for fmt formatter
+namespace Hazel {
+class Event;
+}
+
+// fmt formatter for Hazel::Event and its derived classes
+template <typename T>
+struct fmt::formatter<T, std::enable_if_t<std::is_base_of_v<Hazel::Event, T>, char>>
+    : fmt::formatter<std::string>
+{
+    template <typename FormatContext>
+    auto format(const T& e, FormatContext& ctx) const {
+        return fmt::formatter<std::string>::format(e.ToString(), ctx);
+    }
+};
+
 namespace Hazel {
 
 class HAZEL_API Log
